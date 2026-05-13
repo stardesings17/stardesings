@@ -1,0 +1,341 @@
+/* ===== RESET GENERAL ===== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    background: #111;
+    padding: 30px;
+}
+
+/* ===== TITULOS ===== */
+
+h2{
+    color: #facc15;
+}
+
+h3{
+    margin: 15px;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+    background: #1e293b;
+    padding: 15px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #facc15;
+}
+
+/* ===== BUSCADOR ===== */
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.buscador input{
+    width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.buscador button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #facc15;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ===== CATÁLOGO ===== */
+
+.catalogo{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.catalogo h2{
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.card{
+    background: #111;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+ }
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3{
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.card p{
+    margin-top: 10px;
+    padding: 0 15px;
+}
+
+.precio{
+    color: #facc15;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #facc15;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover{
+    background: #fde047;
+    transform: scale(1.05);
+}
+
+
+.testimonios{
+    padding: 50px 20px;
+    background: #0f172a;
+}
+
+.testimonios h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.comentarios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.comentario{
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+}
+
+/* ===== REDES ===== */
+
+.redes{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.redes h2{
+    margin-bottom: 20px;
+}
+
+.iconos-redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.iconos-redes a{
+    text-decoration: none;
+    color: white;
+    background: #1e293b;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.iconos-redes a:hover{
+    background: #facc15;
+    color: black;
+}
+
+/* ===== CONTACTO ===== */
+
+.contacto{
+    padding: 50px 20px;
+}
+
+.contacto h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacto form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto input,
+.contacto textarea{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contacto textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contacto button{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #facc15;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== INFO ===== */
+
+.info{
+    padding: 50px 20px;
+    text-align: center;
+    background: #111;
+}
+
+.info h2{
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.info p{
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+}
+
+/* ===== BOTÓN ARRIBA ===== */
+
+.btn-arriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background: #facc15;
+    color: black;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-arriba:hover{
+    transform: scale(1.1);
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width: 768px){
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buscador{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buscador input{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .iconos-redes{
+        flex-direction: column;
+    }
+
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+}
